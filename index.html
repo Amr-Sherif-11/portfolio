@@ -610,6 +610,18 @@
         width: 40px;
         height: 40px;
     }
+    .project-link {
+        text-decoration: none;
+        color: inherit;
+    }
+    .project-img-full {
+        padding: 0 !important;
+    }
+    .project-cover-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
     </style>
 </head>
 
@@ -753,10 +765,10 @@
             <h2 class="reveal">Featured Projects</h2>
             <div class="projects-grid">
                 <!-- Servix App -->
-                <a href="https://servix-amr-11-projects.vercel.app" target="_blank" rel="noopener" class="project-card reveal" style="text-decoration: none; color: inherit;">
+                <a href="https://servix-amr-11-projects.vercel.app" target="_blank" rel="noopener" class="project-card reveal project-link">
                     <div class="main-project-badge">Main Project</div>
-                    <div class="project-img" style="padding: 0;">
-                        <img src="servix.png" alt="Servix" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="project-img project-img-full">
+                        <img src="servix.png" alt="Servix" class="project-cover-img">
                     </div>
                     <div class="project-content">
                         <h3>Servix</h3>
