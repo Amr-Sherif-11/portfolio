@@ -114,8 +114,8 @@
             width: 100%;
             padding: 1.5rem 0;
             z-index: 1000;
-            backdrop-filter: blur(15px);
             -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
             background: rgba(10, 10, 10, 0.85);
             border-bottom: 1px solid var(--border-color);
             transition: var(--transition);
@@ -513,8 +513,8 @@
             right: 1.25rem;
             background: rgba(59, 130, 246, 0.15);
             color: var(--primary-accent);
-            backdrop-filter: blur(5px);
             -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
             padding: 0.5rem 1.25rem;
             border-radius: 100px;
             font-size: 0.85rem;
@@ -753,40 +753,22 @@
             <h2 class="reveal">Featured Projects</h2>
             <div class="projects-grid">
                 <!-- Servix App -->
-                <div class="project-card reveal">
+                <a href="https://servix-amr-11-projects.vercel.app" target="_blank" rel="noopener" class="project-card reveal" style="text-decoration: none; color: inherit;">
                     <div class="main-project-badge">Main Project</div>
-                    <div class="project-img">
-                        <i data-lucide="smartphone" class="icon-small"></i>
+                    <div class="project-img" style="padding: 0;">
+                        <img src="servix.png" alt="Servix" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="project-content">
-                        <h3>Servix App</h3>
+                        <h3>Servix</h3>
                         <p>A comprehensive platform connecting professionals with users, featuring a robust subscription
                             system, real-time messaging, and localized service discovery.</p>
                         <div class="skill-tags">
                             <span class="skill-tag">React Native</span>
                             <span class="skill-tag">Supabase</span>
                             <span class="skill-tag">Node.js</span>
-                            <span class="skill-tag">MySQL</span>
                         </div>
                     </div>
-                </div>
-                <!-- Other Project -->
-                <div class="project-card reveal">
-                    <div class="project-img">
-                        <i data-lucide="globe" class="icon-small"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Full Stack Web Applications</h3>
-                        <p>A collection of end-to-end web solutions built with modern stacks, focusing on performance,
-                            security, and scalability across diverse industries.</p>
-                        <div class="skill-tags">
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">Express.js</span>
-                            <span class="skill-tag">MySQL</span>
-                            <span class="skill-tag">REST APIs</span>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
